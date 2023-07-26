@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Entrar_gimnasio</class>
+ <widget class="QWidget" name="Entrar_gimnasio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>568</width>
+    <height>441</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>568</width>
+    <height>441</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Entrar al gimnasio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/entrar.png</normaloff>:/imagenes/entrar.png</iconset>
+  </property>
+  <widget class="QWidget" name="wdg_fondo_principal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget #wdg_fondo_principal {
+	
+	
+	background-image: url(:/imagenes/gimnasio_cambiar_info.jpg);
+background-position: center;
+}</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>551</width>
+      <height>417</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lay_ver_principal" stretch="1,2,1">
+     <item>
+      <widget class="QLabel" name="lbl_entrar">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(212, 212, 0, 177);
+border-radius:5px;
+padding-right:30px;
+padding-left:30px;
+font: 30pt &quot;Gill Sans MT Condensed&quot;;
+color: rgb(255, 255, 255);
+qproperty-alignment: AlignCenter;</string>
+       </property>
+       <property name="text">
+        <string>Entrar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="lay_hor_datos">
+       <item>
+        <layout class="QVBoxLayout" name="lay_ver_foto">
+         <item>
+          <widget class="QLCDNumber" name="lcd_hora">
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_foto">
+           <property name="minimumSize">
+            <size>
+             <width>217</width>
+             <height>178</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>217</width>
+             <height>178</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255,255,255,166);
+border: 2px solid rgba(255,255, 255, 255);
+border-radius:20px;
+padding:10px 20px 10px 20px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../images/imagenes.qrc">:/imagenes/persona.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="lay_frm_datos">
+         <property name="verticalSpacing">
+          <number>40</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbl_nombre">
+           <property name="styleSheet">
+            <string notr="true">font: 13pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Nombre:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="txt_nombre">
+           <property name="maximumSize">
+            <size>
+             <width>217</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(255, 255, 255, 255);
+padding-bottom: 5px;
+font: 12pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbl_fecha_actual">
+           <property name="styleSheet">
+            <string notr="true">font: 13pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Fecha actual:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="dat_fecha_actual">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(255,255, 255, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+qproperty-alignment: AlignCenter;</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2000</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbl_fecha_final">
+           <property name="styleSheet">
+            <string notr="true">font: 13pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Fecha final:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDateEdit" name="dat_fecha_final">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(255,255, 255, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+qproperty-alignment: AlignCenter;</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2000</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lbl_permiso">
+           <property name="styleSheet">
+            <string notr="true">font: 13pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Permiso: </string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QCheckBox" name="chk_permiso_entrada">
+           <property name="styleSheet">
+            <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Permiso de entrada</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_cedula_TI">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,157);
+border: none;
+padding-bottom: 5px;
+border-radius:5px;
+font: 18pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+qproperty-alignment: AlignCenter;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Inserte su No de identidad/Cedula</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+  <include location="../../../../../../../../Program Files (x86)/images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

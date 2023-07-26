@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ingresar_inscripcion</class>
+ <widget class="QDialog" name="Ingresar_inscripcion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>323</width>
+    <height>114</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>323</width>
+    <height>114</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>323</width>
+    <height>114</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Nueva inscripción</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item>
+      <widget class="QLabel" name="lbl_ingrese_nueva_inscripcion">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Ingrese la nueva inscripción:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="lay_hor_objetivos">
+       <item>
+        <widget class="QRadioButton" name="rdb_dia">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>DIA</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_inscripcion</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rdb_mes">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>MES</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_inscripcion</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rdb_anual">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>AÑO</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_inscripcion</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar_inscripcion">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="btn_group_inscripcion"/>
+ </buttongroups>
+</ui>

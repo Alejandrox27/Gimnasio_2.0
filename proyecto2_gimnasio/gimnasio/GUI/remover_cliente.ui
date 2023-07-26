@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Clientes_remover</class>
+ <widget class="QWidget" name="Clientes_remover">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>370</width>
+    <height>192</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>370</width>
+    <height>192</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Remover cliente</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/basura.png</normaloff>:/imagenes/basura.png</iconset>
+  </property>
+  <widget class="QWidget" name="wdg_principal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>371</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget #wdg_principal {
+	
+	background-image: url(:/imagenes/gimnasio_remover.jpg);
+	background-position:center;
+}</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lay_ver_principal" stretch="0,2,4">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_Remover_cliente">
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:5px;
+padding-right:30px;
+padding-left:30px;
+font: 30pt &quot;Gill Sans MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Remover Cliente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_codigo_cliente">
+       <property name="styleSheet">
+        <string notr="true">
+ background-color: rgba(0,0,0,30);
+	border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>Codigo del cliente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_remover_cliente">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btn_remover_cliente {
+	background-color:rgba(195, 145, 19, 186);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_remover_cliente:hover {
+	background-color: rgba(255, 213, 3 , 182);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_remover_cliente:pressed {
+	background-color:rgba(200, 133, 0, 200);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Remover cliente</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

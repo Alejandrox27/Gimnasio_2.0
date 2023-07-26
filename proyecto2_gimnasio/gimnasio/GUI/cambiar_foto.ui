@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActualizarFoto</class>
+ <widget class="QDialog" name="ActualizarFoto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>237</width>
+    <height>254</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Actualizar Foto</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/lapiz_editar.png</normaloff>:/imagenes/lapiz_editar.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item>
+      <widget class="QLabel" name="lbl_actualizarFoto">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Actualizar Foto:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_foto_cliente">
+       <property name="minimumSize">
+        <size>
+         <width>217</width>
+         <height>178</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>217</width>
+         <height>178</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0);
+border: 2px solid rgba(0, 0, 0, 255);
+border-radius:20px;
+padding:10px 20px 10px 20px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../images/imagenes.qrc">:/imagenes/agregar.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar_nueva_foto">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+  <include location="../../../../../../../../Program Files (x86)/images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

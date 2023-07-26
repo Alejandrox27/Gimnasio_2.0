@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Buscar_informacion_cliente</class>
+ <widget class="QWidget" name="Buscar_informacion_cliente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>330</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>330</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Buscar información de un cliente</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/lupa.png</normaloff>:/imagenes/lupa.png</iconset>
+  </property>
+  <widget class="QWidget" name="wdg_principal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>341</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget #wdg_principal {
+background-image: url(:/imagenes/gimnasio_buscar_informacion.jpg);
+background-position: center;
+}</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>321</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_buscar_informacion">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(241, 101, 103, 166);
+border-radius:5px;
+padding-right:30px;
+padding-left:30px;
+font: 30pt &quot;Gill Sans MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Buscar información</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="lay_frm_principal">
+       <property name="horizontalSpacing">
+        <number>15</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_cedula_ti">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Cedula/T.I: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_cedula_TI">
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="placeholderText">
+          <string>Inserte aquí el No de Id/Cedula.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btn_buscar_cliente">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btn_buscar_cliente {
+	background-color: rgba(255, 87, 90, 170);
+	border-radius: 5px;
+	margin-right:7px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_buscar_cliente:hover {
+	background-color:rgba(255, 147, 149, 175);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_buscar_cliente:pressed {
+	background-color:rgba(195, 50, 53, 200);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>Buscar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_nombre">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Nombre:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txt_nombre">
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Aquí se mostrará el nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_objetivo">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>objetivo:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="txt_objetivo">
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Aquí se mostrará el objetivo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lbl_patologias">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Patologias:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPlainTextEdit" name="txt_patologias">
+         <property name="minimumSize">
+          <size>
+           <width>217</width>
+           <height>83</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>83</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border: 2px solid rgba(0, 0, 0, 255);
+border-radius:15px;
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Aquí se mostrarán las patologias</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_inscripcion">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Inscripción:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="txt_inscripcion">
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Aquí se mostrará el tipo de inscripción</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lbl_Foto_cliente">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Foto:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="lbl_foto">
+         <property name="minimumSize">
+          <size>
+           <width>217</width>
+           <height>178</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>217</width>
+           <height>178</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: 2px solid rgba(0, 0, 0, 255);
+border-radius:20px;
+padding:10px 20px 10px 20px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../images/imagenes.qrc">:/imagenes/persona.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbl_fecha_final">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Fecha final:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QDateEdit" name="dat_fecha_final">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+qproperty-alignment: AlignCenter;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2000</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="lbl_permiso">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Permiso:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QCheckBox" name="chkentrada_gimnasio">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;; color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Entrada al gimnasio</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+  <include location="../../../../../../../../Program Files (x86)/images/imagenes.qrc"/>
+  <include location="../../../../../../.designer/images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

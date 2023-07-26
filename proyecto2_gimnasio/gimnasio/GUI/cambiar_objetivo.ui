@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ingresar_objetivo</class>
+ <widget class="QDialog" name="Ingresar_objetivo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>137</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>137</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>137</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Nuevo Objetivo</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item>
+      <widget class="QLabel" name="lbl_ingrese_nuevo_objetivo">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Ingrese el nuevo objetivo:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="lay_hor_objetivos">
+       <item>
+        <widget class="QRadioButton" name="rdb_perder_peso">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>Perder peso</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_objetivo</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rdb_aumento_masa_muscular">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>Aumento de masa muscular</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_objetivo</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rdb_tonificar">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton {
+  background-color: transparent;
+  padding: 4px;
+  color: #333333;
+font: 9pt &quot;Gill Sans MT&quot;;
+}
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+}
+
+QRadioButton:indicator:checked:hover{
+  background-color: rgb(34, 34, 255);
+}
+
+
+QRadioButton::indicator:unchecked {
+  border: 1px solid #999999;
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:hover:unchecked {
+  border: 1px solid rgb(32, 54, 255);
+  background-color: #FFFFFF;
+}
+
+QRadioButton::indicator:checked {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(139, 49, 184);
+} </string>
+         </property>
+         <property name="text">
+          <string>Tonificar</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btn_group_objetivo</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_otro_objetivo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Otro...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="btn_group_objetivo"/>
+ </buttongroups>
+</ui>

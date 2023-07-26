@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Gimnasio</class>
+ <widget class="QMainWindow" name="Gimnasio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gimnasío</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/Pesas_logo.png</normaloff>:/imagenes/Pesas_logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="wdg_principal">
+   <property name="minimumSize">
+    <size>
+     <width>847</width>
+     <height>656</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>847</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget #wdg_principal{
+  background-image: url(:/imagenes/imagen_gimnasio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="lay_ver_principal">
+      <item>
+       <widget class="QMdiArea" name="mdi_principal">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="background">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>160</red>
+           <green>160</green>
+           <blue>160</blue>
+          </color>
+         </brush>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="stt_barra"/>
+  <widget class="QMenuBar" name="mbr_clientes">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>847</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mnu_archivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="mni_salir"/>
+    <addaction name="mni_cargar"/>
+    <addaction name="mni_guardar"/>
+   </widget>
+   <widget class="QMenu" name="mnu_clientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="mni_agregar_nuevo"/>
+    <addaction name="mni_remover"/>
+    <addaction name="mni_cambiar_info_cliente"/>
+    <addaction name="mni_consultar_cliente"/>
+    <addaction name="mni_entrar"/>
+   </widget>
+   <widget class="QMenu" name="mnu_informacion">
+    <property name="title">
+     <string>Información</string>
+    </property>
+    <addaction name="mni_version"/>
+    <addaction name="mni_creador"/>
+   </widget>
+   <addaction name="mnu_archivo"/>
+   <addaction name="mnu_clientes"/>
+   <addaction name="mnu_informacion"/>
+  </widget>
+  <action name="mni_salir">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/salir.png</normaloff>:/imagenes/salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="mni_cargar">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/cargar.png</normaloff>:/imagenes/cargar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cargar...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="mni_guardar">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/guardar.png</normaloff>:/imagenes/guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="mni_agregar_nuevo">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/agregar.png</normaloff>:/imagenes/agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar nuevo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="mni_remover">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/basura.png</normaloff>:/imagenes/basura.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remover cliente</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="mni_cambiar_info_cliente">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/lapiz_editar.png</normaloff>:/imagenes/lapiz_editar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cambiar información</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="mni_consultar_cliente">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/lupa.png</normaloff>:/imagenes/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar información cliente</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="mni_version">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/version.png</normaloff>:/imagenes/version.png</iconset>
+   </property>
+   <property name="text">
+    <string>Versión</string>
+   </property>
+  </action>
+  <action name="mni_creador">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/persona.png</normaloff>:/imagenes/persona.png</iconset>
+   </property>
+   <property name="text">
+    <string>Creador</string>
+   </property>
+  </action>
+  <action name="mni_entrar">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/imagenes/entrar.png</normaloff>:/imagenes/entrar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Entrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

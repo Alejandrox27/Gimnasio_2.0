@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="imagenes">
+    <file>gimnasio_buscar_informacion.jpg</file>
+    <file>gimnasio_cambiar_info.jpg</file>
+    <file>gimnasio_remover.jpg</file>
+    <file>entrar.png</file>
+    <file>version.png</file>
+    <file>lapiz_editar.png</file>
+    <file>basura.png</file>
+    <file>lupa.png</file>
+    <file>cargar.png</file>
+    <file>guardar.png</file>
+    <file>salir.png</file>
+    <file>Pesas_logo.png</file>
+    <file>agregar.png</file>
+    <file>persona.png</file>
+    <file>imagen_gimnasio.jpg</file>
+    <file>gimnasio_agregar.jpg</file>
+  </qresource>
+</RCC>

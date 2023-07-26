@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActualizarPatologias</class>
+ <widget class="QDialog" name="ActualizarPatologias">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>299</width>
+    <height>159</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Actualizar Patologias</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/lapiz_editar.png</normaloff>:/imagenes/lapiz_editar.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="lbl_actualizarPatologias">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Actualizar Patologias:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="txt_patologias">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border: 2px solid rgba(0, 0, 0, 255);
+border-radius: 5px;
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Inserte patologias separadas por una coma &quot;,&quot;.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar_patologias">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

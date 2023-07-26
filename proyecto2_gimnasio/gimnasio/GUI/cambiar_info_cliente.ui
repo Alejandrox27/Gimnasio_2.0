@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cambiar_info_cliente</class>
+ <widget class="QWidget" name="Cambiar_info_cliente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>493</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>493</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Actualizar información del cliente</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/imagenes/lapiz_editar.png</normaloff>:/imagenes/lapiz_editar.png</iconset>
+  </property>
+  <widget class="QWidget" name="wdg_principal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>501</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget #wdg_principal {
+	
+	background-image: url(:/imagenes/gimnasio_cambiar_info.jpg);
+	background-position: center;
+}</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>474</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_ActualizarInfo">
+       <property name="styleSheet">
+        <string notr="true">
+background-color:rgba(206, 202, 59,210);
+border: 4px solid rgba(118, 118, 0, 166);
+border-radius:5px;
+padding-right:30px;
+padding-left:30px;
+font: 30pt &quot;Gill Sans MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Actualizar información del cliente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_identidad_cedula">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,75);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(255, 255, 255);
+border-radius: 5px;
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>Inserte el No de identidad/cedula del cliente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_nombre">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_id">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>No de identidad/cedula</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_objetivo">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Objetivo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_patologias">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Patologias</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_inscripcion">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Inscripción</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_foto">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color:rgba(176, 142, 99,210);
+	border-radius: 5px;
+	
+	color: rgb(255, 255, 255);
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 0, 225);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton:pressed {
+	background-color: rgba(170, 85, 0, 225);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Foto</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
